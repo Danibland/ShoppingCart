@@ -3,6 +3,10 @@
     <string name="BtnUsuario">Usuario</string>
     <string name="BtnAdmin">Administrador</string>
     <string name="Bievenido_a">Bienvenido</string>
-    <string name="BtnIniciarUs">Iniciar Sesion</string>
+    <string name="BtnEnviarCod">Enviar Código</string>
+    <string name="BtnIniciar">Iniciar</string>
     <string name="OlvidoSuCon">¿Olvido su Contraseña?</string>
+    <string name="hintNumero">Ingrese su número</string>
+    <string name="hintPass">Contraseña</string>
+    <string name="SeleccionRedes">También Puedes Iniciar con: </string>
 </resources>

@@ -1,9 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginAdminActivity">
+    tools:context=".LoginAdminActivity"
+    android:background="@color/color7">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ImgLogUs"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/avatar">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+    <EditText
+        android:id="@+id/EtnumeroAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edittext_border"
+        android:layout_below="@id/ImgLogUs"
+        android:hint="@string/hintNumero"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/EtcodigoAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edittext_border"
+        android:layout_below="@id/ImgLogUs"
+        android:hint="@string/hintPass"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/BtnEnviarCodAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EtnumeroAdmin"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/color6"
+        android:text="@string/BtnEnviarCod"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/BtnIniciarAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EtcodigoAdmin"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/color6"
+        android:text="@string/BtnIniciar"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_below="@id/BtnEnviarCodAdmin"
+        android:id="@+id/SeleccionRedes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/SeleccionRedes"
+        android:textColor="@color/white"
+        android:textSize="15dp">
+
+    </TextView>
+
+
+    <ImageButton
+        android:id="@+id/BtnFacebook"
+        android:layout_width="82dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/SeleccionRedes"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/facebook1"
+        />
+
+
+    <ImageButton
+        android:id="@+id/BtnGoogle"
+        android:layout_width="82dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/SeleccionRedes"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/google"
+        />
+
+
+</RelativeLayout>

@@ -21,68 +21,102 @@
     </de.hdodenhof.circleimageview.CircleImageView>
 
 
-    <LinearLayout
-        android:id="@+id/layout1"
+
+    <EditText
+        android:id="@+id/Etnumero"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edittext_border"
+        android:layout_below="@id/ImgLogUs"
+        android:hint="@string/hintNumero"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/Etcodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edittext_border"
+        android:layout_below="@id/ImgLogUs"
+        android:hint="@string/hintPass"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+       android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/BtnEnviarCod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Etnumero"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/color6"
+        android:text="@string/BtnEnviarCod"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/BtnIniciar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Etcodigo"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/color6"
+        android:text="@string/BtnIniciar"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_below="@id/BtnEnviarCod"
+        android:id="@+id/SeleccionRedes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_below="@+id/ImgLogUs">
+        android:layout_marginTop="15dp"
+        android:text="@string/SeleccionRedes"
+        android:textColor="@color/white"
+        android:textSize="15dp">
 
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="50dp"
-            android:background="@drawable/edittext_border"
-            android:hint="Correo"
-            android:inputType="textEmailAddress"
-            android:padding="10dp"
-            android:textAlignment="center"
-            android:textColor="@color/white" />
+    </TextView>
 
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/email"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="50dp"
-            android:background="@drawable/edittext_border"
-            android:hint="Contraseña"
-            android:inputType="textPassword"
-            android:padding="10dp"
-            android:textAlignment="center"
-            android:textColor="@color/white"/>
 
-        <Button
-            android:id="@+id/login_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/password"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="50dp"
-            android:backgroundTint="@color/color6"
-            android:text="@string/BtnIniciarUs"
-            android:textColor="@color/white"
-            android:textSize="20dp"/>
+    <ImageButton
+        android:id="@+id/BtnFacebook"
+        android:layout_width="82dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/SeleccionRedes"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/facebook1"
+        />
 
-        <TextView
-            android:id="@+id/forgot_password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/login_button"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:text="@string/OlvidoSuCon"
-            android:textColor="@color/white"
-            android:textAlignment="center"/>
 
-    </LinearLayout>
+    <ImageButton
+        android:id="@+id/BtnGoogle"
+        android:layout_width="82dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/SeleccionRedes"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/google"
+         />
 
 
 </RelativeLayout>
