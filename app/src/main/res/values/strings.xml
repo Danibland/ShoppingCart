@@ -3,4 +3,6 @@
     <string name="BtnUsuario">Usuario</string>
     <string name="BtnAdmin">Administrador</string>
     <string name="Bievenido_a">Bienvenido</string>
+    <string name="BtnIniciarUs">Iniciar Sesion</string>
+    <string name="OlvidoSuCon">¿Olvido su Contraseña?</string>
 </resources>
